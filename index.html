@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Camera - Pin your memories on an interactive Earth globe. Geotag photos, explore the world, and share your adventures globally with the Travel Camera app.">
+    <title>Travel Camera App | Pin Your Journey on the Globe</title>
+    
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Travel Camera App">
+    <meta property="og:description" content="Capture, geotag, and explore your photos on a stunning 3D interactive globe.">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Globe.gl Dependency -->
+    <script src="https://unpkg.com/globe.gl"></script>
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="ph-fill ph-aperture"></i>
+            <span>Travel Camera</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Support</a>
+            <a href="#" class="btn-primary-small">Get the App</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="ph ph-list"></i>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div id="globe-container"></div>
+        <div class="hero-content">
+            <div class="badge">Next Generation Travel Log</div>
+            <h1>Pin Your Memories <br><span class="gradient-text">On The Globe</span></h1>
+            <p>Upload photos with coordinates and view them mapped on a stunning 3D Earth. Keep a personal travel log or share it with a global community.</p>
+            <div class="hero-actions">
+                <a href="#" class="btn-primary">
+                    <i class="ph-fill ph-apple-logo"></i> App Store
+                </a>
+                <a href="#" class="btn-secondary">
+                    <i class="ph-fill ph-google-play-logo"></i> Play Store
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <p>Explore Features</p>
+            <i class="ph ph-caret-down"></i>
+        </div>
+    </header>
+
+    <section id="features" class="features-section">
+        <div class="section-header">
+            <h2>Your World, <span class="gradient-text">Documented.</span></h2>
+            <p>A completely new way to relive your travels and explore what others are seeing.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon-wrap color-purple">
+                    <i class="ph-fill ph-map-pin-line"></i>
+                </div>
+                <h3>Geotagged Accuracy</h3>
+                <p>Every photo you take is automatically mapped to its exact latitude and longitude on the 3D globe.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="icon-wrap color-blue">
+                    <i class="ph-fill ph-lock-key"></i>
+                </div>
+                <h3>Private Collections</h3>
+                <p>Build your secret travel journal. Your private photos are encrypted and only visible to you on your personal earth.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="icon-wrap color-pink">
+                    <i class="ph-fill ph-globe-hemisphere-west"></i>
+                </div>
+                <h3>Global Gallery</h3>
+                <p>Make a memory public and watch it appear on the global feed. Discover stunning views pinned by travelers worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-section">
+        <div class="glass-banner">
+            <div class="banner-text">
+                <h2>Ready to map your life?</h2>
+                <p>Join thousands of travelers documenting their journey on the ultimate visual globe.</p>
+            </div>
+            <div class="banner-cta">
+                <button class="btn-primary shadow-glow">Download Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ph-fill ph-aperture"></i>
+                    <span>Travel Camera LLC</span>
+                </div>
+                <p>Documenting memories, one coordinate at a time.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Contact Us</h4>
+                    <div style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0.75rem; line-height: 1.5;">
+                        5830 E 2nd St Ste 7000<br>
+                        Casper, WY 82609
+                    </div>
+                    <a href="mailto:vijaybavadiya@travelcamerallc.com"><i class="ph ph-envelope-simple"></i> vijaybavadiya@travelcamerallc.com</a>
+                    <a href="tel:+19297273513"><i class="ph ph-phone"></i> +1 9297273513</a>
+                </div>
+                <div class="link-group">
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Use</a>
+                </div>
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">App Support</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Travel Camera LLC. All rights reserved.</p>
+            <div class="socials">
+                <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+                <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+                <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
